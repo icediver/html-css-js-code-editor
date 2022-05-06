@@ -4,6 +4,7 @@ import "ace-builds/src-noconflict/mode-html";
 import "ace-builds/src-noconflict/theme-monokai";
 import "ace-builds/src-noconflict/snippets/html";
 import "ace-builds/src-min-noconflict/ext-language_tools";
+import "ace-builds/webpack-resolver";
 import { EditorContext } from '../../context/context';
 
 export const HtmlEditor = () => {
@@ -19,7 +20,7 @@ export const HtmlEditor = () => {
         fontSize={16}
         height={'100%'}
         width= {'100%'}
-        showPrintMargin={false}
+        showPrintMargin={true}
         showGutter={true}
         highlightActiveLine={true}
         setOptions={{
@@ -27,7 +28,7 @@ export const HtmlEditor = () => {
           enableLiveAutocompletion: true,
           enableSnippets: true,
           showLineNumbers: true,
-          tabsize: 2
+          tabSize: 2
         }}
       />
   )

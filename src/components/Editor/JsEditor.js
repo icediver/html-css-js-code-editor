@@ -27,7 +27,7 @@ export const JsEditor = () => {
           enableLiveAutocompletion: true,
           enableSnippets: true,
           showLineNumbers: true,
-          tabsize: 2
+          tabSize: 2
         }}
       />
   )
